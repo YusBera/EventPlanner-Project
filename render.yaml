@@ -48,18 +48,26 @@ services:
         value: http://config-server:8888
       - key: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
         value: http://discovery-service:8761/eureka/
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: eventplanner-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
         fromDatabase:
-            name: eventplanner-db
-            property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+          name: eventplanner-db
+          property: port
+      - key: DB_NAME
         fromDatabase:
-            name: eventplanner-db
-            property: password
+          name: eventplanner-db
+          property: databaseName
+      - key: DB_USER
+        fromDatabase:
+          name: eventplanner-db
+          property: user
+      - key: DB_PASS
+        fromDatabase:
+          name: eventplanner-db
+          property: password
 
   # 5. Event Catalog Service
   - type: web
@@ -73,18 +81,26 @@ services:
         value: http://config-server:8888
       - key: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
         value: http://discovery-service:8761/eureka/
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: eventplanner-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
         fromDatabase:
-            name: eventplanner-db
-            property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+          name: eventplanner-db
+          property: port
+      - key: DB_NAME
         fromDatabase:
-            name: eventplanner-db
-            property: password
+          name: eventplanner-db
+          property: databaseName
+      - key: DB_USER
+        fromDatabase:
+          name: eventplanner-db
+          property: user
+      - key: DB_PASS
+        fromDatabase:
+          name: eventplanner-db
+          property: password
 
   # 6. Booking Service
   - type: web
@@ -98,18 +114,26 @@ services:
         value: http://config-server:8888
       - key: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
         value: http://discovery-service:8761/eureka/
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: eventplanner-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
         fromDatabase:
-            name: eventplanner-db
-            property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+          name: eventplanner-db
+          property: port
+      - key: DB_NAME
         fromDatabase:
-            name: eventplanner-db
-            property: password
+          name: eventplanner-db
+          property: databaseName
+      - key: DB_USER
+        fromDatabase:
+          name: eventplanner-db
+          property: user
+      - key: DB_PASS
+        fromDatabase:
+          name: eventplanner-db
+          property: password
 
   # 7. Payment Service
   - type: web
@@ -123,18 +147,26 @@ services:
         value: http://config-server:8888
       - key: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
         value: http://discovery-service:8761/eureka/
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: eventplanner-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
         fromDatabase:
-            name: eventplanner-db
-            property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+          name: eventplanner-db
+          property: port
+      - key: DB_NAME
         fromDatabase:
-            name: eventplanner-db
-            property: password
+          name: eventplanner-db
+          property: databaseName
+      - key: DB_USER
+        fromDatabase:
+          name: eventplanner-db
+          property: user
+      - key: DB_PASS
+        fromDatabase:
+          name: eventplanner-db
+          property: password
 
 databases:
   - name: eventplanner-db
