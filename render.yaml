@@ -62,15 +62,23 @@ services:
         value: http://discovery-service:8761/eureka/
       - key: CONFIG_SERVER_URL
         value: http://config-server:8888
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: eventplanner-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: eventplanner-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: eventplanner-db
+          property: database
+      - key: DB_USER
         fromDatabase:
           name: eventplanner-db
           property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+      - key: DB_PASS
         fromDatabase:
           name: eventplanner-db
           property: password
@@ -90,15 +98,23 @@ services:
         value: http://discovery-service:8761/eureka/
       - key: CONFIG_SERVER_URL
         value: http://config-server:8888
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: eventplanner-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: eventplanner-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: eventplanner-db
+          property: database
+      - key: DB_USER
         fromDatabase:
           name: eventplanner-db
           property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+      - key: DB_PASS
         fromDatabase:
           name: eventplanner-db
           property: password
@@ -121,15 +137,23 @@ services:
         value: http://discovery-service:8761/eureka/
       - key: CONFIG_SERVER_URL
         value: http://config-server:8888
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: eventplanner-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: eventplanner-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: eventplanner-db
+          property: database
+      - key: DB_USER
         fromDatabase:
           name: eventplanner-db
           property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+      - key: DB_PASS
         fromDatabase:
           name: eventplanner-db
           property: password
@@ -149,15 +173,23 @@ services:
         value: http://discovery-service:8761/eureka/
       - key: CONFIG_SERVER_URL
         value: http://config-server:8888
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: eventplanner-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: eventplanner-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: eventplanner-db
+          property: database
+      - key: DB_USER
         fromDatabase:
           name: eventplanner-db
           property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+      - key: DB_PASS
         fromDatabase:
           name: eventplanner-db
           property: password
