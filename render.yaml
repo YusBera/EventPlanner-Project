@@ -185,11 +185,11 @@ services:
         fromDatabase:
           name: eventplanner-db
           property: database
-      - key: DB_USER
+      - key: DB_USERNAME
         fromDatabase:
           name: eventplanner-db
           property: user
-      - key: DB_PASS
+      - key: DB_PASSWORD
         fromDatabase:
           name: eventplanner-db
           property: password
