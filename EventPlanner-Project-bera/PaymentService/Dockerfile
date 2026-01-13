@@ -1,9 +1,9 @@
 FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
-COPY services-bera/PaymentService/pom.xml .
+COPY EventPlanner-Project-bera/PaymentService/pom.xml .
 RUN mvn dependency:go-offline
 
-COPY services-bera/PaymentService/src src
+COPY EventPlanner-Project-bera/PaymentService/src src
 RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:17-jre-alpine
